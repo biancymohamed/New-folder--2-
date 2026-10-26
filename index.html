@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+<div id="crud"> 
+    <div id="head">
+<h2>CRUD SYSTEM</h2>
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dolores!</P>
+    </div> 
+
+
+
+
+
+<div id="inputs">
+<input type="text" id="title" placeholder="Title">
+<div class="total">
+<input type="number" onkeyup="Getprice()" id="price" placeholder="Price">
+<input type="number" onkeyup ="Getprice()" id="taxis" placeholder="taxis">
+<input type="number"  onkeyup ="Getprice()" id="ads" placeholder="ads">
+<input type="number" onkeyup="Getprice()"  id="discount" placeholder="discount">
+<span id="span">total:</span>
+</div>
+<input type="text" id="count" placeholder="Count">
+<input type="text" id="category" placeholder="Gategory">
+</div> 
+
+
+
+
+<div id="buttons">
+    <button id="button">Create</button> 
+    <input type="text" id="search" placeholder="Search">
+
+</div>
+
+
+
+
+<div id="search">
+    
+<button id="Search BY Category" onclick="getsearch('category')">Search BY Category</button>
+<button id="Search BY title" onclick="getsearch('title')">Search BY title</button>
+
+</div>
+
+
+
+<div class="outputs">
+    <table>
+<thead>
+
+<tr>
+
+<th>TITLE</th>
+<th>PRICE</th>
+<th>TAXES</th>
+<th>ADS</th>
+<th>DISCOUNT</th>
+<th>TOTAL</th>
+<th>Count</th>
+<th>CATEGORY</th>
+<th>UPDATE</th>
+<th>DELETE</th>
+</tr>
+
+</thead> 
+
+
+
+
+<tbody id="body">
+<tr>
+
+
+<!-- <th>1</th>
+<th>Samsung</th>
+<th>5000</th>
+<th>600</th>
+<th>150</th>
+<th>60</th>
+<th>1500</th>
+<th>phone</th>
+<th><button id="button">Update</button></th>
+<th><button id="button">Delete</button></th>
+ -->
+
+
+</tr>
+</tbody>
+
+
+    </table>
+</div>
+
+
+
+</div> 
+<script src="js/script.js"></script>
+</body>
+</html>
